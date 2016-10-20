@@ -6,8 +6,11 @@ A quick definition of acromyms:
  - **E**
  - **A**
  - **N**
+
+ A description of MEAN.
  
  - **C**
  - **R**
  - **U**
  - **D**
+A description of CRUD.
