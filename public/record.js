@@ -46,7 +46,8 @@ angular.module('mapApp', [])
   });
 
   $scope.addNote = function() {
-    $scope.record.notes.push($scope.activeNote);
+    if ($scope.activeNote && $scope.record.notes.indexOf($scope.activeNote) == -1 )
+      $scope.record.notes.push($scope.activeNote);
     $scope.activeNote = "";
   };
 
