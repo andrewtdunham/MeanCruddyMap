@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html xmlns:ng="http://angularjs.org">
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body ng-app="mapApp">
+        <%- include('./partials/header') %>
+        <form class="form-container" ng-controller="formController">
+            <%- include('./partials/selection') %>
+            <%- include('./partials/form-readonly') %>
+        </form>
+        <%- include('./partials/footer') %>
+    </body>
+</html>

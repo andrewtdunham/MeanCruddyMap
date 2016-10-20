@@ -1,0 +1,18 @@
+<title>
+  <% if (title) { %>
+    <%= title %> | 
+  <% } %>
+  A MEAN, CRUD-y Map
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<% if (typeof(styles)!="undefined") { %>
+  <% styles.forEach(function(link){ %>
+    <link rel="stylesheet" href=<%= link %> >
+  <% }); %>
+<% } %>
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>

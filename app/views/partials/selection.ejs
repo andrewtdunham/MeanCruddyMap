@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="form-group">
+        <label for="repeatSelect"> Select a record: </label>
+        <select name="repeatSelect" class="form-control" id="repeatSelect" ng-model="selected" ng-change="updateRecord()">
+            <option ng-repeat="record in allRecords" value="{{record._id}}">{{record.name}}</option>
+        </select>
+    </div>
+</div>

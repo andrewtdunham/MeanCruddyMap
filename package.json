@@ -1,0 +1,17 @@
+{
+  "name": "cruddy-map",
+  "version": "0.0.0",
+  "description": "A sample map application using the MEAN stack and a CRUD",
+  "main": "server.js",
+  "repository": "",
+  "author": "Andrew Dunham <andrewtdunham@gmail.com>",
+  "dependencies": {
+    "express": "~4.0.0", 
+    "morgan": "~1.0.0", 
+    "mongoose": "~3.6.13", 
+    "body-parser": "~1.0.1",
+    "ejs": "~2.0.0",
+    "bower": "~1.7.9",
+    "mongoose":"~4.6.4"
+  }
+}

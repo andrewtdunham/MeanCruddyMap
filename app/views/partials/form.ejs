@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div id="map-div"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <label for="lat">Latitude:</label>
+        <input type="text" class="form-control" id="lat" ng-model="record.lat" readonly>
+    </div>
+    <div class="col-sm-6">
+        <label for="long">Longitiude:</label>
+        <input type="text" class="form-control" ng-model="record.lng" id="long" readonly>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" ng-model="record.name">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <label>Notes</label>
+            <ul class="list-group">
+                <div ng-repeat="note in record.notes">
+                    <li class="list-group-item"> {{note}} </li>
+                </div>
+            </ul>
+            <div class="input-group">
+                <input type="text" class="form-control" id="note" ng-model="activeNote">
+                <span class="input-group-btn">
+                    <button type="submit" style="cursor:pointer" class="btn btn-secondary" ng-click="addNote()">Add</button>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <button type="button" class="btn btn-primary" ng-click="<%= operation %>()"><%= title %></button>
+        <button type="button" class="btn btn-secondary" ng-click="reset()">Clear</button>
+    </div>
+</div>
+<pre>record = {{record | json}}</pre>

@@ -1,0 +1,7 @@
+</div>
+<p class="text-center text-muted">Andrew T Dunham</p>
+<% if (typeof(scripts) != "undefined") { %>
+  <% scripts.forEach(function(link){ %>
+    <script src=<%= link %> ></script>
+  <% }); %>
+<% } %>

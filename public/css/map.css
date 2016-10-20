@@ -1,0 +1,12 @@
+#map-div { width: 94%;
+    height: 500px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.form-container{
+    padding:10px;
+}
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

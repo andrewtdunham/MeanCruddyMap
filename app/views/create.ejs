@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html xmlns:ng="http://angularjs.org">
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body ng-app="mapApp">
+        <%- include('./partials/header') %>
+        <form ng-submit="addNote()" id="ng-form" class="form-container" ng-controller="formController">
+            <%- include('./partials/form') %>
+        </form>
+        <%- include('./partials/footer') %>
+    </body>
+</html>
